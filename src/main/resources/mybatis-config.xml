@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置数据源，交给Spring去做-->
+
+    <!--取别名-->
+    <typeAliases>
+        <package name="com.tsm.pojo"/>
+    </typeAliases>
+
+    <mappers>
+    <!--<mapper resource="com.tsm.dao.BookMapper"/> 如果接口和mapper.xml名字不同用resource-->
+        <!--接口和mapper.xml名字一样可以直接用class-->
+        <mapper class="com.tsm.dao.BookMapper"/>
+    </mappers>
+
+</configuration>
